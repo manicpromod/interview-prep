@@ -1,4 +1,4 @@
-package com.manicpromod.crackingcoding;
+package org.manicpromod.crackingcoding;
 
 
 

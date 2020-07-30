@@ -1,4 +1,4 @@
-package com.manicpromod.leetcode;
+package org.manicpromod.leetcode;
 
 /**
 https://leetcode.com/problems/maximum-binary-tree/

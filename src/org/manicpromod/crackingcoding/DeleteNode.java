@@ -1,4 +1,4 @@
-package com.manicpromod.crackingcoding;
+package org.manicpromod.crackingcoding;
 
 /**
  * Created by pmanickam on 7/30/2020 at 10:54 AM
@@ -53,6 +53,7 @@ public class DeleteNode {
         addNode(head,50);
 
         System.out.println("Traversing the values");
+        traverse(head);
 
     }
 

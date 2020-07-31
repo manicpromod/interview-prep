@@ -5,19 +5,19 @@ package org.manicpromod.crackingcoding;
  */
 public class DeleteNode {
 
-    public CreateLinkedList.Node deleteNode(CreateLinkedList.Node head, int data) {
+    public static CreateLinkedList.Node deleteNode(CreateLinkedList.Node head, int data) {
 
         if(head.data == data) return head;
-
+        CreateLinkedList.Node h1 = head;
         while(head.next != null)
         {
             if(head.next.data == data) {
                 head.next = head.next.next;
-                return head;
+
             }
             head = head.next;
         }
-        return head;
+        return h1;
     }
 
     public static void addNode(CreateLinkedList.Node head, int data) {
@@ -41,6 +41,7 @@ public class DeleteNode {
             System.out.print("-->");
             head = head.next;
         }
+        System.out.print(head.data);
     }
 
     public static void main(String[] args) {
@@ -51,10 +52,10 @@ public class DeleteNode {
         addNode(head,30);
         addNode(head,40);
         addNode(head,50);
-
-        System.out.println("Traversing the values");
         traverse(head);
-
+        System.out.println();
+        System.out.println("Traversing the values");
+        traverse(deleteNode(head,40));
     }
 
 }

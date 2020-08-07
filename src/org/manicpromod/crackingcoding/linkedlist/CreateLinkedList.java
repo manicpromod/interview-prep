@@ -1,4 +1,4 @@
-package org.manicpromod.crackingcoding;
+package org.manicpromod.crackingcoding.linkedlist;
 
 
 

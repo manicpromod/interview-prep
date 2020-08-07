@@ -1,10 +1,10 @@
-package org.manicpromod.crackingcoding;
+package org.manicpromod.crackingcoding.linkedlist;
 
 import java.util.HashSet;
 import java.util.Set;
 
-import static org.manicpromod.crackingcoding.DeleteNode.addNode;
-import static org.manicpromod.crackingcoding.DeleteNode.traverse;
+import static org.manicpromod.crackingcoding.linkedlist.DeleteNode.addNode;
+import static org.manicpromod.crackingcoding.linkedlist.DeleteNode.traverse;
 
 /**
  * Created by pmanickam on 7/30/2020 at 2:35 PM

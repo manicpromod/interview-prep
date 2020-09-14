@@ -54,8 +54,30 @@ public class DeleteNode {
         addNode(head,50);
         traverse(head);
         System.out.println();
-        System.out.println("Traversing the values");
-        traverse(deleteNode(head,40));
+//        System.out.println("Traversing the values");
+//        traverse(deleteNode(head,40));
+
+        traverse(deleteNthPosition(head,4));
+    }
+
+    public static CreateLinkedList.Node deleteNthPosition(CreateLinkedList.Node head, int pos) {
+
+        if(pos ==1) {
+            head = head.next;
+            return head;
+        }
+
+        CreateLinkedList.Node prev = head;
+
+        for(int i=0;i<pos-2;i++) {
+
+            prev = prev.next;
+        }
+
+        prev.next = prev.next.next;
+
+        return head;
+
     }
 
 }

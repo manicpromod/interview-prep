@@ -37,4 +37,16 @@ public class ReverseLinkedList {
         traverse(revereseLinkedList(head));
     }
 
+    public static void  reverseRecursion(CreateLinkedList.Node head){
+        CreateLinkedList.Node current = head;
+        if(current.next == null) {
+            return ;
+        }
+        reverseRecursion(current.next);
+        CreateLinkedList.Node temp = current.next;
+         temp.next = current;
+         current.next = null;
+
+    }
+
 }
